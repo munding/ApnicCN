@@ -2,7 +2,7 @@
 解析Apnic分配给大陆的IP段，利用腾讯云SCF上传至腾讯云COS
 
 # 为什么写这个工具
-公司有个内部项目要判断IP地址是否为国内IP
+公司有地方要判断IP地址是否为国内IP
 
 数据来源为："http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest"
 
