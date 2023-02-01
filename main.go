@@ -75,7 +75,7 @@ func parseApnicCN2Cos() {
 			buf.WriteString(ipNet.String() + "\n")
 		}
 	}
-	_, err = cosClient.Object.Put(context.Background(), ObjectName, strings.NewReader(buf.String()), nil)
+	_, err = cosClient.Object.Put(context.Background(), ObjectName, buf, nil)
 	if err != nil {
 		fmt.Println("upload to cos err: " + err.Error())
 	}
